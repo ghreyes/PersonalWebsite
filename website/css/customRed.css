@@ -1,0 +1,319 @@
+*{
+	font-family: 'Palatino', sans-serif;
+}
+
+/* General Color Schemes */
+.headerColor{
+	background-color: #990000;
+}
+
+.buttonColor{
+    background-color: #CC0000;
+}
+
+.subColor{
+	background-color:#FF000066;
+}
+
+.subColor2{
+	background-color: #AAAAAA;
+}
+
+
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	height:75px;
+	color: white;
+	font-size: 15px;
+	z-index: 50;
+}
+
+#stylesDiv{
+	float:right;
+	height:100%;
+	position:absolute;
+	right:10%;
+}
+
+.roundButton{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position:relative;
+  top:50%;
+  transform: translateY(-75%);
+}
+
+/*remove body margins*/
+body{
+	margin:0px;
+}
+
+#openNavBar {
+	position: absolute;
+	left: 25px;
+	top: 25%;
+	font-size: 25px;
+	z-index:51;
+}
+
+#hideWindow{
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	background-color: #33333377;
+	z-index: -1;
+}
+
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 100; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#mainContent {
+	transition: margin-left .5s;
+	padding: 40px;
+	background-color:#EEEEEE;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+#collageDiv{
+	padding-top:75px;
+	width:100%;
+}
+
+#collageIMG{
+	display:block;
+	margin:auto;
+}
+
+#dropDownDiv{
+	width:70%;
+	display:inline-block;
+	vertical-align:top;
+	padding-left:20px;
+}
+
+button.accordion {
+    color: #fff;
+	text-shadow: #000 1px 0px 0px; 
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-weight:bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size:15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #62AFFB;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: '\02796'; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#aboutMe{
+	font-size: 20px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.jobDiv{
+	display:table-row;
+}
+
+.expLeft{
+	text-align:right;
+	float:left;
+	width:30%;
+	font-size:20px;
+}
+
+.expRight{
+	float:right;
+	width:65%;
+}
+
+.expTitle{
+	float:left;
+	text-align:left;
+	width:65%;
+	margin-bottom:0px;
+	font-size:20px;
+	text-decoration:underline;
+}
+.expDesc{
+	text-align:left;
+	float:left;
+	width:65%;
+	margin-top:0px;
+}
+
+.eduDiv{
+	display:table;
+	width:100%;
+}
+
+.eduLeft{
+	text-align:right;
+	float:left;
+	width:30%;
+	font-size:20px;
+}
+
+.eduRight{
+	float:right;
+	width:65%;
+	font-size:20px;
+}
+
+#projectExamples{
+	height:100%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin-top:40px;
+}
+
+.projectRow{
+	margin-top:20px;
+	display:flex;
+	width:100%;
+}
+
+.project{
+	width:30%;
+}
+
+.projectLeft{
+	float: left;
+	margin-left:15%;
+	margin-right:5%;
+}
+
+.projectRight{
+	float:right;
+	margin-right:15%;
+	margin-left:5%;
+}
+
+.projectCenter{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.centerProjectImage{
+	height:200px;
+	width:200px;
+	display:block;
+	margin:auto;
+	margin-top:40px;
+}
+
+.projTitle{
+	text-align:center;
+}
+
+.projDesc{
+	width:80%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:40px;
+}
+
+#footer{
+	width:100%;
+	bottom:0;
+	height:50px;
+	line-height: 50px;
+}
+
+#footerLeft{
+	float:left;
+	margin-left:5%;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 11px;
+}
+
+#footerRight{
+	float:right;
+	margin-right:10%;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size:14px;
+}

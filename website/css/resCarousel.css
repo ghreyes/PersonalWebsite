@@ -1,0 +1,62 @@
+/*resCarousel Css*/
+
+.outt { display: none; }
+
+.leftLs, .leftLst {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  left: 0;
+  width: 40px;
+  height: 100px;
+}
+
+.rightLs, .rightLst {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 40px;
+  height: 100px;
+}
+
+.resCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 0 15px;
+  width: 100%;
+  position:relative;
+}
+
+.resCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+
+.resCarousel-inner .item { float: left; }
+
+/*resCarousel Css End*/
+
+.act, .nxt { display: block; }
+
+.sliderMain {
+  height: 280px;
+  overflow: hidden;
+}
+
+.item, .EiProd {
+  padding: 10px;
+  border-right: 1px solid rgb(242, 242, 242);
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.item:hover .EiProdImg img {
+  transform: scale(1.05);
+  transition: 0.3s ease all;
+  position: relative;
+}
+
