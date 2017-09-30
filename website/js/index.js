@@ -14,7 +14,7 @@ function closeNav() {
 
 function navToResume(){
 	closeNav();
-	window.scroll(0, findPos(document.getElementById("dropDownDiv"))-75);
+	window.scroll(0, findPos(document.getElementById("mainContent"))-75);
 }
 
 function navToProjects(){
