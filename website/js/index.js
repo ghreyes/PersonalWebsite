@@ -56,6 +56,9 @@ function changeStyle(style){
 	
 	if(style == 'colorScheme.css') document.getElementById("collageIMG").src = "images/collage4.png";
 	else if(style == 'csRed.css') document.getElementById("collageIMG").src = "images/collage5.png";
+	else if(style == 'csBlue.css') document.getElementById("collageIMG").src = "images/collage6.png";
+	else if(style == 'csGreen.css') document.getElementById("collageIMG").src = "images/collage7.png";
+	else console.log("Unrecognized style: " + style + " used in function changeStyle() in file index.js");
 }
 
 function makeMultiItemCarousel(){

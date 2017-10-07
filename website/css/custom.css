@@ -28,7 +28,7 @@
   border: 1px solid black;
   position:relative;
   top:50%;
-  transform: translateY(-75%);
+  transform: translateY(-50%);
 }
 
 /*remove body margins*/
@@ -200,7 +200,6 @@ div.panel {
 .expTitle{
 	float:left;
 	text-align:left;
-	width:65%;
 	margin-bottom:0px;
 	font-size:20px;
 	text-decoration:underline;
@@ -208,7 +207,6 @@ div.panel {
 .expDesc{
 	text-align:left;
 	float:left;
-	width:65%;
 	margin-top:0px;
 }
 
@@ -239,7 +237,7 @@ div.panel {
 
 .projectRow{
 	margin-top:20px;
-	display:flex;
+	/*display:flex;*/
 	width:100%;
 }
 
