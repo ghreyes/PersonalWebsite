@@ -9,7 +9,7 @@
   bottom: 0;
   z-index: 100;
   left: 0;
-  width: 40px;
+  width: 50px;
   height: 100px;
 }
 
@@ -20,7 +20,7 @@
   right: 0;
   bottom: 0;
   z-index: 100;
-  width: 40px;
+  width: 50px;
   height: 100px;
 }
 
@@ -50,8 +50,6 @@
 
 .item, .EiProd {
   padding: 10px;
-  border-right: 1px solid rgb(242, 242, 242);
-  border-bottom: 1px solid rgb(242, 242, 242);
 }
 
 .item:hover .EiProdImg img {

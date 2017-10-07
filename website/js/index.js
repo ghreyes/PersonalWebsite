@@ -52,7 +52,10 @@ function makeAccordian(){
 }
 
 function changeStyle(style){
-	document.getElementsByTagName("link").item(0).href = style;
+	document.getElementsByTagName("link").item(0).href = "css/" + style;
+	
+	if(style == 'colorScheme.css') document.getElementById("collageIMG").src = "images/collage4.png";
+	else if(style == 'csRed.css') document.getElementById("collageIMG").src = "images/collage5.png";
 }
 
 function makeMultiItemCarousel(){

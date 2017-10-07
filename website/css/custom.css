@@ -2,25 +2,6 @@
 	font-family: 'Palatino', sans-serif;
 }
 
-/* General Color Schemes */
-.headerColor{
-	background-color: #18817C;
-}
-
-.buttonColor{
-    background-color: #509DE9;
-}
-
-.subColor{
-	background-color:#ADD8E6;
-}
-
-.subColor2{
-	background-color: #8DB8C6;
-}
-
-
-
 #header {
 	position: fixed;
 	top: 0;
@@ -126,7 +107,6 @@ body{
 #mainContent {
 	transition: margin-left .5s;
 	padding: 40px;
-	background-color:#EEEEEE;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -172,11 +152,6 @@ button.accordion {
     font-size:15px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #62AFFB;
-}
-
 button.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
@@ -196,6 +171,7 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    border:none;
 }
 
 #aboutMe{

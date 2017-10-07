@@ -1,0 +1,29 @@
+/* General Color Schemes */
+.headerColor{
+	background-color: #222222;
+}
+
+.buttonColor{
+    background-color: #DD0000;
+}
+
+.subColor{
+	background-color:#333333;
+}
+
+.subColor2{
+	background-color: #8DB8C6;
+}
+
+#mainContent{
+	background-color: #666666;
+}
+
+.project{
+	color:#FFFFFF;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #333333;
+}
