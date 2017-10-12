@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>			
 		<link rel="stylesheet" href="css/colorScheme.css">
-		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/custom_mobile.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/resCarousel.css" rel="stylesheet">
 
@@ -13,11 +13,10 @@
 		<script src="js/index.js"></script>
 		<script src="js/resCarousel.js"></script>
 
-		<script> checkMobile();</script>
-
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title> Gabriel Reyes </title>
-		<meta name="description" content="Gabriel Reyes - Programmer, Web Designer, App Developer. Graduate of UCSC, Class of 2017. Currently working out of the Jonesboro, Arkansas area.">
+
+		<script>console.log("MOBILE PAGE loaded");</script>
 
 		<!-- ****** faviconit.com favicons ****** -->
 		<link rel="shortcut icon" href="images/favicon.ico">
@@ -51,15 +50,7 @@
 			<!-- Opens sideNav -->
 			<div id='openNavBar'>
 				<span onclick="openNav()"> <label>&#9776</label> </span>
-			</div>
-
-			<!-- Buttons to change color scheme -->
-			<div id="stylesDiv">
-				<button class="roundButton" style="background-color:#18817C; border: 1px #DDDDDD solid;" onclick="changeStyle('colorScheme.css')"></button>
-				<button class="roundButton" style="background-color:#222222; border: 1px #DD0000 solid;" onclick="changeStyle('csRed.css')"></button>
-				<button class="roundButton" style="background-color:#000048; border: 1px #203DD2 solid;" onclick="changeStyle('csBlue.css')"></button>
-				<button class="roundButton" style="background-color:#207100; border: 1px #CCCCCC solid;" onclick="changeStyle('csGreen.css')"></button>
-			</div>
+			</div>			
 
 			<h1>Gabriel Reyes</h1>
 		</div>
@@ -163,7 +154,7 @@
 			</div>
 
 			<div class="container-fluid" style="margin-top:40px;" id="projectExamples">
-				<div class="resCarousel" data-items="1,2,3,3" data-slide="1">
+				<div class="resCarousel" data-items="1,1, 2, 2" data-slide="1">
 					<div class="resCarousel-inner" >
 
 						<div class="item">
@@ -252,6 +243,15 @@
 			<a target="_blank" href="mailto:ghreyes921@gmail.com">Email</a>
 			<a target="_blank" href="https://www.linkedin.com/in/gabriel-reyes-002549130/">LinkedIn</a>
 			<a href="ext_docs/Resume.pdf" download>Resume PDF</a>
+			
+			<!-- Buttons to change color scheme -->
+			<div id='stylesDiv_mobile'>
+				<button class="roundButton" style="background-color:#18817C; border: 1px #DDDDDD solid; left:20%; transform: translateX(-50%);" onclick="changeStyle('colorScheme.css')"></button>
+				<button class="roundButton" style="background-color:#222222; border: 1px #DD0000 solid; left:40%; transform: translateX(-50%);" onclick="changeStyle('csRed.css')"></button>
+				<button class="roundButton" style="background-color:#000048; border: 1px #203DD2 solid; left:60%; transform: translateX(-50%);" onclick="changeStyle('csBlue.css')"></button>
+				<button class="roundButton" style="background-color:#207100; border: 1px #CCCCCC solid; left:80%; transform: translateX(-50%);" onclick="changeStyle('csGreen.css')"></button>
+			</div>
+			
 			<p id="dateModified">Last Updated: 9/27/2017</p>
 		</div>
 

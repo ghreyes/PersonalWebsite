@@ -1,11 +1,31 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-	document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("mainContent").style.marginLeft = "250px";
-    document.getElementById("hideWindow").style.zIndex = "80";
+function checkMobile(){
+	console.log("checkMobile ran");
+	console.log(screen.width);
+	if (screen.width <= 800) {
+    	window.location.href = "index_mobile.html";
+  	}
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+	//get html file name
+	var path = window.location.pathname;
+	var page = path.split("/").pop();
+	console.log(page);
+	
+	//mobile page
+	if(page == "index_mobile.html"){
+		document.getElementById("mySidenav").style.width = "100%";
+    	document.getElementById("hideWindow").style.zIndex = "80";
+	}
+	//normal page
+	else{
+	document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("hideWindow").style.zIndex = "80";
+	}
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0*/
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("mainContent").style.marginLeft = "0";
@@ -59,6 +79,8 @@ function changeStyle(style){
 	else if(style == 'csBlue.css') document.getElementById("collageIMG").src = "images/collage6.png";
 	else if(style == 'csGreen.css') document.getElementById("collageIMG").src = "images/collage7.png";
 	else console.log("Unrecognized style: " + style + " used in function changeStyle() in file index.js");
+	
+	if(window.location.pathname.split("/").pop() == "index_mobile.html") closeNav();
 }
 
 function makeMultiItemCarousel(){
