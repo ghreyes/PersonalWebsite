@@ -34,12 +34,12 @@ function closeNav() {
 
 function navToResume(){
 	closeNav();
-	window.scroll(0, findPos(document.getElementById("mainContent"))-75);
+	window.scroll(0, findPos(document.getElementById("mainContent")));
 }
 
 function navToProjects(){
 	closeNav();
-	window.scroll(0, findPos(document.getElementById("projectExamples"))-75);
+	window.scroll(0, findPos(document.getElementById("projectExamples")));
 }
 
 //Finds y value of given object
@@ -49,7 +49,12 @@ function findPos(obj) {
         do {
             curtop += obj.offsetTop;
         } while (obj = obj.offsetParent);
-    return [curtop];
+        
+        //modify to account for header
+        if(window.location.pathname.split("/").pop() == "index_mobile.html")curtop -= 150;
+        else curtop -= 75;
+         
+    	return [curtop];
     }
 }
 
