@@ -1,0 +1,3 @@
+Sitemap: http://ghreyes.com/sitemap.xml
+User-agent: *
+Disallow:
