@@ -39,7 +39,8 @@ body{
 #openNavBar {
 	position: absolute;
 	left: 25px;
-	top: 25%;
+	top: 50%;
+	transform: translateY(-50%);
 	font-size: 25px;
 	z-index:51;
 }

@@ -20,6 +20,7 @@
 	left:50%;
 	transform: translateY(-50%)translateX(-50%);
 	margin:auto;
+	font-size: 60px;
 }
 
 #stylesDiv_mobile{
@@ -43,10 +44,10 @@ body{
 
 #openNavBar {
 	position: absolute;
-	left: 20%;
+	left: 10%;
 	top: 50%;
 	transform:translateY(-50%);
-	font-size: 30px;
+	font-size: 50px;
 	z-index:51;
 }
 
