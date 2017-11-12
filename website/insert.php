@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 
 echo "Using insert.php";
@@ -31,5 +27,3 @@ else{
 
 header("refresh:2; url = index.html");
 ?> 
-</body>
-</html>
