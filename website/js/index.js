@@ -58,24 +58,6 @@ function findPos(obj) {
     }
 }
 
-function makeAccordian(){
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-	
-	for (i = 0; i < acc.length; i++) {
-	  acc[i].onclick = function() {
-	    this.classList.toggle("active");
-	    var panel = this.nextElementSibling;
-	    console.log(panel);
-	    if (panel.style.maxHeight){
-	      panel.style.maxHeight = null;
-	    } else {
-	      panel.style.maxHeight = panel.scrollHeight + "px";
-	    }
-	  };
-	}
-}
-
 function changeStyle(style){
 	document.getElementsByTagName("link").item(0).href = "css/" + style;
 	
@@ -88,27 +70,25 @@ function changeStyle(style){
 	if(window.location.pathname.split("/").pop() == "index_mobile.html") closeNav();
 }
 
-function makeMultiItemCarousel(){
-	// Multi-item carousel code courtesy of https://codepen.io/mephysto/pen/ZYVKRY
-	// Instantiate the Bootstrap carousel
-	$('.multi-item-carousel').carousel({
-	  interval: false
-	});
-	
-	// for every slide in carousel, copy the next slide's item in the slide.
-	// Do the same for the next, next item.
-	$('.multi-item-carousel .item').each(function(){
-	  var next = $(this).next();
-	  if (!next.length) {
-	    next = $(this).siblings(':first');
-	  }
-	  next.children(':first-child').clone().appendTo($(this));
-	  
-	  if (next.next().length>0) {
-	    next.next().children(':first-child').clone().appendTo($(this));
-	  } else {
-	  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-	  }
-	});
-	//end multi-item carousel code
+function normalizeSlideHeights() {
+    console.log("normalized");
+    $('.resCarousel').each(function () {
+        var items = $('.item', this);
+        // reset the height
+        items.css('min-height', 0);
+        // set the height
+        var maxHeight = Math.max.apply(null,
+            items.map(function () {
+                console.log("height:" + $(this).height());
+                console.log("outer:" + $(this).outerHeight());
+                console.log("inner:" + $(this).innerHeight());
+                return $(this).outerHeight()
+            }).get());
+        console.log("max:" + maxHeight);
+        items.css('min-height', maxHeight + 'px');
+    })
 }
+
+$(document).ready(function () {
+    normalizeSlideHeights();
+});

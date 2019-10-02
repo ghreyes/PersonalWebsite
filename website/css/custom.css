@@ -139,7 +139,7 @@ body{
 	padding-left:20px;
 }
 
-button.accordion {
+.accordion {
     color: #ffffff;
 	text-shadow: #000 1px 0px 0px; 
     cursor: pointer;
@@ -153,7 +153,7 @@ button.accordion {
     font-size:15px;
 }
 
-button.accordion:after {
+.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     font-weight: bold;
@@ -162,17 +162,21 @@ button.accordion:after {
     margin-left: 5px;
 }
 
-button.accordion.active:after {
+.accordion.active:after {
     content: '\02796'; /* Unicode character for "minus" sign (-) */
+}
+
+.panel{
+    border: none;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
-    padding: 0 18px;
+    /*padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    border:none;
+    border:none;*/
 }
 
 #aboutMe{
@@ -270,7 +274,7 @@ div.panel {
 	width:200px;
 	display:block;
 	margin:auto;
-	margin-top:40px;
+	/*margin-top:40px;*/
 }
 
 .projTitle{
@@ -330,4 +334,8 @@ a.right.carousel-control{
 
 .carousel{
 	margin-top: 40px;
+}
+
+.h-100{
+    min-height: inherit;
 }
