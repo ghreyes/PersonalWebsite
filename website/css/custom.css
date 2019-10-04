@@ -154,7 +154,7 @@ body{
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    /*content: '\02795';*/ /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     font-weight: bold;
     color: #fff;
@@ -163,7 +163,7 @@ body{
 }
 
 .accordion.active:after {
-    content: '\02796'; /* Unicode character for "minus" sign (-) */
+    /*content: '\02796';*/ /* Unicode character for "minus" sign (-) */
 }
 
 .panel{

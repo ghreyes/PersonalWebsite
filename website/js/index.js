@@ -1,6 +1,4 @@
 function checkMobile(){
-	console.log("checkMobile ran");
-	console.log(screen.width);
 	if (screen.width <= 800) {
     	window.location.href = "index_mobile.html";
   	}
@@ -11,7 +9,6 @@ function openNav() {
 	//get html file name
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
-	console.log(page);
 	
 	//mobile page
 	if(page == "index_mobile.html"){
@@ -71,7 +68,6 @@ function changeStyle(style){
 }
 
 function normalizeSlideHeights() {
-    console.log("normalized");
     $('.resCarousel').each(function () {
         var items = $('.item', this);
         // reset the height
@@ -79,16 +75,21 @@ function normalizeSlideHeights() {
         // set the height
         var maxHeight = Math.max.apply(null,
             items.map(function () {
-                console.log("height:" + $(this).height());
-                console.log("outer:" + $(this).outerHeight());
-                console.log("inner:" + $(this).innerHeight());
                 return $(this).outerHeight()
             }).get());
-        console.log("max:" + maxHeight);
         items.css('min-height', maxHeight + 'px');
     })
 }
 
 $(document).ready(function () {
     normalizeSlideHeights();
+
+    //swap fa icon on expand/collapse
+    $('.accordion').on('click', function () {
+        var icon = $(this).find('i');
+        icon.toggleClass('fa-plus');
+        icon.toggleClass('fa-minus');
+    });
 });
+
+
