@@ -132,13 +132,6 @@ body{
 	margin:auto;
 }
 
-#dropDownDiv{
-	width:70%;
-	display:inline-block;
-	vertical-align:top;
-	padding-left:20px;
-}
-
 .accordion {
     color: #ffffff;
 	text-shadow: #000 1px 0px 0px; 

@@ -16,7 +16,7 @@
     <script src="js/resCarousel.js"></script>
     <script src="js/index.js"></script>
 
-    <script>checkMobile();</script>
+    <!--<script>checkMobile();</script>-->
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> Gabriel Reyes </title>
@@ -75,105 +75,108 @@
 
 		<!-- Main page content goes here (Non-Sidenav stuff) -->
 		<div id='mainContent' onclick="closeNav()">
-
-			<img src="images/portrait.png" width="20%" vertical-align="top"/>
-
-			<div id='dropDownDiv'>
-				<!-- About Me -->
-                <div class="panel">
-                    <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#aboutMePanel">
-                        About Me
-                        <i class="fas fa-plus pull-right"></i>
-                    </div>
-                    <div class="panel-body collapse" id="aboutMePanel"> 
-                        <p id="aboutMe">
-                            Gabriel Reyes - Programmer, Web Designer, App Developer. Graduate of UCSC, Class of 2017. Programmer with team oriented experience and history in teaching. Strong organization, problem solving, and debugging skills. Adaptable, efficient, and reliable. Works well in both team-based projects and independent practice. Loves creating games, web design, and app development.
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-offset-0 col-sm-4 col-xs-offset-3 col-xs-6" style="margin-bottom: 20px">
+                    <img src="images/portrait.png" vertical-align="top" style="max-width:100%"/>
                 </div>
 
-				<div class="panel">
-                    <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#jobPanel">
-                        Experience
-                        <i class="fas fa-plus pull-right"></i>
-                    </div>
-                    <div class="panel-body collapse" id="jobPanel">
-                        <div class="jobDiv">
-                            <p class="expLeft">
-                                Jan 2018 - Current 
-                            </p>
-                            <div class="expRight">
-                                <p class="expTitle">
-                                    Software Developer @ AceOne Technologies
-                                </p>
-                                <p class="expDesc">
-                                    Primarily .NET app development along with some web development. Projects include a Xamarin cross-platform mobile app for configuring specialized software, a Laravel web app for providing pricing estimates, and much more.
-                                </p>
-                            </div>
+			    <div class="col-lg-9 col-sm-8 col-xs-12">
+				    <!-- About Me -->
+                    <div class="panel">
+                        <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#aboutMePanel">
+                            About Me
+                            <i class="fas fa-plus pull-right"></i>
                         </div>
-                        <div class="jobDiv">
-                            <p class="expLeft">
-                                Summer 2015, 2016, and 2017
+                        <div class="panel-body collapse" id="aboutMePanel"> 
+                            <p id="aboutMe">
+                                Gabriel Reyes - Programmer, Web Designer, App Developer. Graduate of UCSC, Class of 2017. Programmer with team oriented experience and history in teaching. Strong organization, problem solving, and debugging skills. Adaptable, efficient, and reliable. Works well in both team-based projects and independent practice. Loves creating games, web design, and app development.
                             </p>
-                            <div class="expRight">
-                                <p class="expTitle">
-                                    Lead Instructor @ iD Tech
-                                </p>
-                                <p class="expDesc">
-                                    Instruction of basic programming concepts to the more advanced. Team cooperation to ensure all camp and instruction duties get completed. Observation and care of students placed under our supervision. Debug student projects.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="jobDiv">
-                            <p class="expLeft">
-                                Sep 2015 - Jun 2016
-                            </p>
-                            <div class="expRight">
-                                <p class="expTitle">
-                                    Tutor @ UCSC
-                                </p>
-                                <p class="expDesc">
-                                    Worked as a tutor for University of California, Santa Cruz. Responsibilities include review of concepts taught by Professor, securely handle test grading, collaboration with the Professor, Teaching Assistants, and other tutors, and debug student projects.
-                                </p>
-                            </div>
                         </div>
                     </div>
-				</div>
 
-				<!-- Education -->
-                <div class="panel">
-                    <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#eduPanel">
-                        Education
-                        <i class="fas fa-plus pull-right"></i>
+				    <div class="panel">
+                        <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#jobPanel">
+                            Experience
+                            <i class="fas fa-plus pull-right"></i>
+                        </div>
+                        <div class="panel-body collapse" id="jobPanel">
+                            <div class="jobDiv">
+                                <p class="expLeft">
+                                    Jan 2018 - Current 
+                                </p>
+                                <div class="expRight">
+                                    <p class="expTitle">
+                                        Software Developer @ AceOne Technologies
+                                    </p>
+                                    <p class="expDesc">
+                                        Primarily .NET app development along with some web development. Projects include a Xamarin cross-platform mobile app for configuring specialized software, a Laravel web app for providing pricing estimates, and much more.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="jobDiv">
+                                <p class="expLeft">
+                                    Summer 2015, 2016, and 2017
+                                </p>
+                                <div class="expRight">
+                                    <p class="expTitle">
+                                        Lead Instructor @ iD Tech
+                                    </p>
+                                    <p class="expDesc">
+                                        Instruction of basic programming concepts to the more advanced. Team cooperation to ensure all camp and instruction duties get completed. Observation and care of students placed under our supervision. Debug student projects.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="jobDiv">
+                                <p class="expLeft">
+                                    Sep 2015 - Jun 2016
+                                </p>
+                                <div class="expRight">
+                                    <p class="expTitle">
+                                        Tutor @ UCSC
+                                    </p>
+                                    <p class="expDesc">
+                                        Worked as a tutor for University of California, Santa Cruz. Responsibilities include review of concepts taught by Professor, securely handle test grading, collaboration with the Professor, Teaching Assistants, and other tutors, and debug student projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+				    </div>
+
+				    <!-- Education -->
+                    <div class="panel">
+                        <div class="panel-heading accordion buttonColor collapsed" data-toggle="collapse" data-target="#eduPanel">
+                            Education
+                            <i class="fas fa-plus pull-right"></i>
+                        </div>
+                        <div class="panel-body collapse" id="eduPanel">
+                            <div class="eduDiv">
+                                <p class="eduLeft">
+                                    School:
+                                </p>
+                                <p class="eduRight">
+                                    University of California, Santa Cruz
+                                </p>
+                            </div>
+                            <div class="eduDiv">
+                                <p class="eduLeft">
+                                    Major:
+                                </p>
+                                <p class="eduRight">
+                                    Computer Science - Game Design
+                                </p>
+                            </div>
+                            <div class="eduDiv">
+                                <p class="eduLeft">
+                                    Graduated:
+                                </p>
+                                <p class="eduRight">
+                                    June 2017
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="panel-body collapse" id="eduPanel">
-                        <div class="eduDiv">
-                            <p class="eduLeft">
-                                School:
-                            </p>
-                            <p class="eduRight">
-                                University of California, Santa Cruz
-                            </p>
-                        </div>
-                        <div class="eduDiv">
-                            <p class="eduLeft">
-                                Major:
-                            </p>
-                            <p class="eduRight">
-                                Computer Science - Game Design
-                            </p>
-                        </div>
-                        <div class="eduDiv">
-                            <p class="eduLeft">
-                                Graduated:
-                            </p>
-                            <p class="eduRight">
-                                June 2017
-                            </p>
-                        </div>
-                    </div>
-                </div>
-			</div>
+			    </div>
+            </div>
 
 			<div class="container-fluid" style="margin-top:40px;" id="projectExamples">
 				<div class="resCarousel" data-items="1,2,3,3" data-slide="1">
